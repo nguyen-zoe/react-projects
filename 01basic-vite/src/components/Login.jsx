@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import './Login.css';
 
 function Login() {
     const [status, setStatus] = useState(null);
@@ -18,7 +19,7 @@ function Login() {
         setData({ ...data, [name]: value })
     }
     return (
-        <div className='container'>
+        <div className='container login-container'>
             <div className="card" style={{ width: '50rem' }}>
                 <div className="card-header text-center">
                     <h1>Login</h1>
